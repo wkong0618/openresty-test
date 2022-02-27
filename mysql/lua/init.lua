@@ -5,7 +5,7 @@ if dbConfig:get('isload') then
     return
 end
 
-local confFile = io.open("/Users/wukong/Desktop/tool/openresty-test/src/common/config/mysql_conf.properties", "r");
+local confFile = io.open("/Users/wukong/Desktop/tool/openresty-test/mysql/common/config/mysql_conf.properties", "r");
 local confStr = confFile:read("*a");
 confFile:close();
 
