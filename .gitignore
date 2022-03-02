@@ -1,3 +1,5 @@
 /.idea/
 /openresty-test.iml
 /mysql/logs/
+/redis/logs/access.log
+/redis/logs/error.log
