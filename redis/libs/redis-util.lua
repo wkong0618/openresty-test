@@ -88,6 +88,9 @@ local function _connect_mod(self,redis)
 
     -- set auth
     if password then
+        -- 该方法用于返回当前连接被成功重用的次数，如果出现错误返回nil，并返回错误描述
+        -- 如果链接不是来自链接池，此方法返回0（及链接从未被重用，及新建连接）；如果来自链接池返回值始终大于0；因此该方法可以用于判断当前连接是否来自连接池。
+        -- 如果需要密码，来自连接池的链接不需要再进行auth验证；如果不做这个判断，连接池不起作用
         local times, err = redis:get_reused_times()
 
         if times == 0 then
