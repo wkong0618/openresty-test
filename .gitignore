@@ -3,3 +3,6 @@
 /mysql/logs/
 /redis/logs/access.log
 /redis/logs/error.log
+/upload/logs/access.log
+/upload/logs/error.log
+/upload/html/uploads/images/2022/03/04/
