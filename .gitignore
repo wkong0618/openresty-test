@@ -8,3 +8,5 @@
 /upload/html/uploads/images/2022/03/04/
 /template/logs/access.log
 /template/logs/error.log
+/proxy/logs/access.log
+/proxy/logs/error.log
