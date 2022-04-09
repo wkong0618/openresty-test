@@ -10,3 +10,4 @@
 /template/logs/error.log
 /proxy/logs/access.log
 /proxy/logs/error.log
+/limit/logs/
